@@ -4,5 +4,7 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="C:/Users/Soringaming/Desktop/Desktop/Games/Mojang/Test Server/Development/ProjectKorra 1.8 beta 10.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Soringaming/Desktop/Desktop/Games/Mojang/Test Server/Development/spigot-1.8.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Gideon/Desktop/Imports For Coding/Spigot.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Gideon/Desktop/Imports For Coding/ProjectKorra (13).jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

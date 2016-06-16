@@ -265,7 +265,7 @@ public class AirJump extends AirAbility implements AddonAbility, Listener {
 
 	@Override
 	public String getAuthor() {
-		return "Moon243 and Soringaming";
+		return "Moon243 and Soringaming"; //Moon was here
 	}
 
 	@Override
@@ -293,7 +293,6 @@ public class AirJump extends AirAbility implements AddonAbility, Listener {
 		c.addDefault("ExtraAbilities.Soringaming&Moon.Air.AirJump.ExtinguishPlayers", true);
 		ConfigManager.defaultConfig.save();
 	}
-
 		//Moon was here
 	@Override
 	public void stop() {
