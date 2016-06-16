@@ -159,11 +159,13 @@ public class AirJump extends AirAbility implements AddonAbility, Listener {
 						e.setVelocity(player.getEyeLocation().getDirection().normalize().multiply(jumpPower));
 					}
 					doInAirParticles();
-					instances.put(e, e);
 				}
 				if(canExtinguish) {
 					player.setFireTicks(0);
 					e.setFireTicks(0);
+				}
+				if(canStopFallDamage) {
+					instances.put(e, e);
 				}
 			}
 			if (t > 10) {
@@ -305,12 +307,10 @@ public class AirJump extends AirAbility implements AddonAbility, Listener {
 
 	@EventHandler
 	public void stopFallDamage(EntityDamageEvent event) {
-		if (event.getEntity() instanceof Player && instances.containsKey(event.getEntity())
-				&& event.getCause() == DamageCause.FALL && canStopFallDamage) {
-			event.setCancelled(true);
-			instances.remove(event.getEntity());
+		if (instances.containsKey(event.getEntity())
+				&& event.getCause() == DamageCause.FALL) {
+					event.setCancelled(true);
 		}
-
 	}
 
 }
