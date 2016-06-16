@@ -292,6 +292,7 @@ public class AirJump extends AirAbility implements AddonAbility, Listener {
 		ConfigManager.defaultConfig.save();
 	}
 
+		//Moon was here
 	@Override
 	public void stop() {
 		ProjectKorra.plugin.getServer().getLogger().log(Level.INFO,
