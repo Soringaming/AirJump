@@ -27,6 +27,8 @@ import com.projectkorra.projectkorra.configuration.ConfigManager;
 import com.projectkorra.projectkorra.util.ParticleEffect;
 
 public class AirJump extends AirAbility implements AddonAbility, Listener {
+	
+	//test
 
 	static FileConfiguration cm = ConfigManager.defaultConfig.get();
 
